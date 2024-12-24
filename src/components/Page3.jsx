@@ -53,8 +53,8 @@ const Page3 = () => {
         <div className="quote"> {displayedText} </div>
         <div className="container-pic">
           <div className="class-pic">
-            <img className="pic9" src="/src/assets/pic9.jpg"></img>
-            <img className="pic8" src="/src/assets/pic8.jpg"></img>
+            <img className="pic9" src="pic9.jpg"></img>
+            <img className="pic8" src="pic8.jpg"></img>
           </div>
         </div>
       </div>

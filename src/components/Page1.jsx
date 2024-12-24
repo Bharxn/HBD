@@ -24,12 +24,12 @@ const Page1 = ({ elementPositions, blowDetected }) => {
       </div>
       {blowDetected && 
         <>
-          <img className="pic1" src="/src/assets/pic1.jpg"></img>
-          <img className="pic2" src="/src/assets/pic2.jpg"></img>
-          <img className="pic3" src="/src/assets/pic3.jpg"></img>
-          <img className="pic4" src="/src/assets/pic4.jpg"></img>
-          <img className="pic5" src="/src/assets/pic5.jpg"></img>
-          <img className="pic6" src="/src/assets/pic6.jpg"></img>
+          <img className="pic1" src="pic1.jpg"></img>
+          <img className="pic2" src="pic2.jpg"></img>
+          <img className="pic3" src="pic3.jpg"></img>
+          <img className="pic4" src="pic4.jpg"></img>
+          <img className="pic5" src="pic5.jpg"></img>
+          <img className="pic6" src="pic6.jpg"></img>
         </>
       }
     </div>

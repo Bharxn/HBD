@@ -51,7 +51,7 @@ const Page2 = () => {
   return (
     <>
       <div className="page2" ref={targetRef}>
-        <img className="pic7" src="/src/assets/pic7.jpg"></img>
+        <img className="pic7" src="pic7.jpg"></img>
         <div className="quote"> {displayedText} </div>
       </div>
     </>

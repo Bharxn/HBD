@@ -66,7 +66,7 @@ const Page4 = () => {
           style={{ zIndex: zIndex1 }}
           onClick={swapZIndex}
         >
-          <source src="/src/assets/vid1.mp4" type="video/mp4" />
+          <source src="vid1.mp4" type="video/mp4" />
         </video>
 
         <video
@@ -77,7 +77,7 @@ const Page4 = () => {
           style={{ zIndex: zIndex2 }}
           onClick={swapZIndex}
         >
-          <source src="/src/assets/vid2.mp4" type="video/mp4" />
+          <source src="vid2.mp4" type="video/mp4" />
         </video>
         <div className="quote">
           {displayedText}
