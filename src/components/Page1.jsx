@@ -18,7 +18,7 @@ const Page1 = ({ elementPositions, blowDetected }) => {
         <div className="drip drip1"></div>
         <div className="drip drip2"></div>
         <div className="drip drip3"></div>
-        {blowDetected && <img className="arrow" src="/src/assets/arrow.png"></img>}
+        {blowDetected && <img className="arrow" src="/public/arrow.png"></img>}
 
         <Candle elementPositions={elementPositions} blowDetected={blowDetected} />
       </div>
