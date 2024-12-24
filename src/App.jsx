@@ -82,7 +82,7 @@ function App() {
   
   return (
     <>
-      {showAverage}
+      {/* {showAverage} */}
       <Page1 elementPositions={elementPositions} blowDetected={blowDetected} />
       {blowDetected && 
         <>
