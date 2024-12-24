@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Page1 from "./components/Page1";
 import Page15 from "./components/Page15";
@@ -79,6 +79,8 @@ function App() {
       }
     };
   }, [blowDetected]);
+
+  const audioRef = useRef(null);
   
   return (
     <>
@@ -86,7 +88,7 @@ function App() {
       <Page1 elementPositions={elementPositions} blowDetected={blowDetected} />
       {blowDetected && 
         <>
-          <audio className="one-call-away" controls autoPlay>
+          <audio ref={audioRef} className="one-call-away" controls autoPlay>
             <source src="song.mp3" type="audio/mpeg"/>
           </audio>
           <Page15/>
