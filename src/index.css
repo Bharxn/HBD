@@ -10,4 +10,9 @@ body {
   background-color: rgb(39, 38, 38);
   color: white;
   margin: auto;
+  overflow-x: hidden;
+}
+
+html {
+  background-color: rgb(39, 38, 38);
 }
