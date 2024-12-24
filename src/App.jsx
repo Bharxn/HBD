@@ -14,6 +14,7 @@ function App() {
   let audioContext;
   let analyser;
   let microphone;
+  const [showAverage, setShowAverage] = useState();
 
   useEffect(() => {
     const newPositions = Array.from(
@@ -56,7 +57,7 @@ function App() {
 
           const average =
             dataArray.reduce((acc, val) => acc + val, 0) / bufferLength;
-
+          setShowAverage(average);
           if (average > 100 && !blowDetected) {
             handleBlow();
           }
@@ -81,6 +82,7 @@ function App() {
   
   return (
     <>
+      {showAverage}
       <Page1 elementPositions={elementPositions} blowDetected={blowDetected} />
       {blowDetected && 
         <>
