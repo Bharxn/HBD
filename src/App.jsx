@@ -58,7 +58,7 @@ function App() {
           const average =
             dataArray.reduce((acc, val) => acc + val, 0) / bufferLength;
           setShowAverage(average);
-          if (average > 50 && !blowDetected) {
+          if (average > 100 && !blowDetected) {
             handleBlow();
           }
 
