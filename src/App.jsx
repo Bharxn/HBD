@@ -85,7 +85,7 @@ function App() {
       {blowDetected && 
         <>
           <audio className="one-call-away" controls autoPlay>
-            <source src="/src/assets/song.mp3" type="audio/mpeg"/>
+            <source src="song.mp3" type="audio/mpeg"/>
           </audio>
           <Page15/>
           <Page2/>
