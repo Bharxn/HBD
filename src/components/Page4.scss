@@ -1,0 +1,45 @@
+.page4 {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid #767676;
+}
+
+.quote {
+  display: flex;
+  font-family: "Mali", serif;
+  font-size: 20px;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+.video1 {
+  margin: 5%;
+  width: 20%;
+  height: auto; 
+  object-fit: contain;
+  border-radius: 30px;
+  margin-left: 10%;
+  border-style: solid;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transform: rotate(-1deg);
+}
+
+.video2 {
+  margin: 5%;
+  width: 20%;
+  height: auto; 
+  object-fit: contain;
+  border-radius: 30px;
+  margin-left: -24%;
+  border-style: solid;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+  transform: rotate(1deg);
+}
+
+// .album {
+//   background-color: aqua;
+// }

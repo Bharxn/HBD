@@ -1,0 +1,72 @@
+.page3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid #767676;
+}
+
+.container-pic {
+  display: flex;
+  justify-content: flex-end;
+  animation: rotate-vibrate 2s ease-in infinite;
+}
+
+.class-pic {
+  position: relative;
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  margin-right: 15%;
+  margin-bottom: 15%;
+}
+
+.pic8 {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.pic9 {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 50%;
+  height: auto; 
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.quote {
+  display: flex;
+  font-family: "Mali", serif;
+  font-size: 20px;
+  margin: 10%;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+@keyframes rotate-vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg); /* Rotate by 10 degrees */
+  }
+  50% {
+    transform: rotate(-5deg); /* Rotate back to -10 degrees */
+  }
+  75% {
+    transform: rotate(5deg); /* Rotate back to 10 degrees */
+  }
+  100% {
+    transform: rotate(0deg); /* Back to original position */
+  }
+}

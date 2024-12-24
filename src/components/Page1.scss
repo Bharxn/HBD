@@ -1,0 +1,258 @@
+$vanilla: #f0e4d0;
+$chocolate: #553c13;
+$pink: #FFB6C1;
+$green: #8FBC8F;
+
+@mixin foodColoring($color) {
+  background-color: $color;
+  box-shadow: 0 2px 0px lighten($color, 5%), 0 4px 0px darken($color, 8.2%),
+    0 6px 0px darken($color, 8.4%), 0 8px 0px darken($color, 8.6%),
+    0 10px 0px darken($color, 8.8%), 0 12px 0px darken($color, 9%),
+    0 14px 0px darken($color, 9.2%), 0 16px 0px darken($color, 9.4%),
+    0 18px 0px darken($color, 9.6%), 0 20px 0px darken($color, 9.8%),
+    0 22px 0px darken($color, 10%), 0 24px 0px darken($color, 10.2%),
+    0 26px 0px darken($color, 10.4%), 0 28px 0px darken($color, 10.6%),
+    0 30px 0px darken($color, 10.8%);
+}
+
+.page1 {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cake {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -125px;
+}
+
+.plate {
+  width: 270px;
+  height: 110px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  background-color: $vanilla;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 darken(#827b71, 10%), 0 5px 40px rgba($vanilla, 0.5);
+}
+
+.cake > * {
+  position: absolute;
+}
+
+.layer {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+  @include foodColoring($pink);
+}
+
+.layer-top {
+  top: 0px;
+}
+.layer-middle {
+  top: 33px;
+}
+.layer-bottom {
+  top: 66px;
+}
+
+.icing {
+  top: -1px;
+  left: -1px;
+  background-color: #8dbc8f;
+  width: 252px;
+  height: 103px;
+  border-radius: 50%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    bottom: 6px;
+    left: 5px;
+    background-color: lighten($green, 3%);
+    box-shadow: 0 0 4px lighten($green, 5%), 0 0 4px lighten($green, 5%), 0 0 4px lighten($green, 5%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.drip {
+  display: block;
+  width: 50px;
+  height: 60px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: $green;
+}
+
+.drip1 {
+  top: 53px;
+  left: 5px;
+  transform: skewY(15deg);
+  height: 48px;
+  width: 40px;
+}
+
+.drip2 {
+  top: 69px;
+  left: 181px;
+  transform: skewY(-15deg);
+}
+
+.drip3 {
+  top: 54px;
+  left: 90px;
+  width: 80px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hbd {
+  position: absolute;
+  top: -130px;
+  left: -190px;
+  width: 800px;
+  font-size: 50px;
+  font-family: cursive;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 1 forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pic1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 7%;
+  border-radius: 20px;
+  width: 10%;
+  height: auto; 
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  opacity: 0;
+}
+
+.pic2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 11%;
+  width: 10%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  animation-delay: 1.6s;
+  opacity: 0;
+}
+
+.pic3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 7%;
+  width: 10%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  animation-delay: 3.2s;
+  opacity: 0;
+}
+
+.pic4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 7%;
+  width: 10%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  opacity: 0;
+}
+
+.pic5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 11%;
+  width: 10%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  animation-delay: 1.6s;
+  opacity: 0;
+}
+
+.pic6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 7%;
+  width: 10%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  animation: moveUp 5s ease-in forwards infinite;
+  animation-delay: 3.2s;
+  opacity: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 250px;
+  right: 30px;
+  margin-right: 7%;
+  width: 60%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: contain;
+  transform: rotate(90deg);
+  animation: moveDown 2s ease-in forwards infinite;
+  opacity: 0.4;
+}
+
+
+@keyframes moveUp {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 250px;
+  }
+
+  100% {
+    top: 310px;
+  }
+}
